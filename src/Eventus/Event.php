@@ -83,6 +83,16 @@ class Event
 	}
 
 	/**
+	 * Returns a human-readable description of this event.
+	 *
+	 * @return string
+	 */
+	function __toString()
+	{
+		return 'Eventus event: '.$this->_name.' ('.get_class($this).')';
+	}
+
+	/**
 	 * @var Dispatcher
 	 */
 	private $_dispatcher;
