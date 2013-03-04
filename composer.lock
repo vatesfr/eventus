@@ -6,16 +6,16 @@
     "packages-dev": [
         {
             "name": "phpunit/php-code-coverage",
-            "version": "1.2.8",
+            "version": "1.2.9",
             "source": {
                 "type": "git",
-                "url": "git://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "1.2.8"
+                "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
+                "reference": "1.2.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/1.2.8",
-                "reference": "1.2.8",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/1.2.9",
+                "reference": "1.2.9",
                 "shasum": ""
             },
             "require": {
@@ -28,7 +28,6 @@
                 "ext-dom": "*",
                 "ext-xdebug": ">=2.0.5"
             },
-            "time": "2013-02-14 08:01:51",
             "type": "library",
             "autoload": {
                 "classmap": [
@@ -55,7 +54,8 @@
                 "coverage",
                 "testing",
                 "xunit"
-            ]
+            ],
+            "time": "2013-02-26 18:55:56"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -74,7 +74,6 @@
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "2012-10-11 04:44:38",
             "type": "library",
             "autoload": {
                 "classmap": [
@@ -100,7 +99,8 @@
             "keywords": [
                 "filesystem",
                 "iterator"
-            ]
+            ],
+            "time": "2012-10-11 04:44:38"
         },
         {
             "name": "phpunit/php-text-template",
@@ -119,7 +119,6 @@
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "2012-10-31 11:15:28",
             "type": "library",
             "autoload": {
                 "classmap": [
@@ -144,7 +143,8 @@
             "homepage": "https://github.com/sebastianbergmann/php-text-template/",
             "keywords": [
                 "template"
-            ]
+            ],
+            "time": "2012-10-31 11:15:28"
         },
         {
             "name": "phpunit/php-timer",
@@ -163,7 +163,6 @@
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "2012-10-11 04:45:58",
             "type": "library",
             "autoload": {
                 "classmap": [
@@ -188,7 +187,8 @@
             "homepage": "http://www.phpunit.de/",
             "keywords": [
                 "timer"
-            ]
+            ],
+            "time": "2012-10-11 04:45:58"
         },
         {
             "name": "phpunit/php-token-stream",
@@ -208,7 +208,6 @@
                 "ext-tokenizer": "*",
                 "php": ">=5.3.3"
             },
-            "time": "2012-10-11 04:47:14",
             "type": "library",
             "autoload": {
                 "classmap": [
@@ -233,20 +232,21 @@
             "homepage": "http://www.phpunit.de/",
             "keywords": [
                 "tokenizer"
-            ]
+            ],
+            "time": "2012-10-11 04:47:14"
         },
         {
             "name": "phpunit/phpunit",
-            "version": "3.7.13",
+            "version": "3.7.15",
             "source": {
                 "type": "git",
-                "url": "git://github.com/sebastianbergmann/phpunit.git",
-                "reference": "3.7.13"
+                "url": "https://github.com/sebastianbergmann/phpunit.git",
+                "reference": "3.7.15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sebastianbergmann/phpunit/archive/3.7.13.zip",
-                "reference": "3.7.13",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3.7.15",
+                "reference": "3.7.15",
                 "shasum": ""
             },
             "require": {
@@ -255,20 +255,22 @@
                 "ext-reflection": "*",
                 "ext-spl": "*",
                 "php": ">=5.3.3",
-                "phpunit/php-code-coverage": ">=1.2.1",
+                "phpunit/php-code-coverage": ">=1.2.1,<1.3.0",
                 "phpunit/php-file-iterator": ">=1.3.1",
                 "phpunit/php-text-template": ">=1.1.1",
-                "phpunit/php-timer": ">=1.0.2",
+                "phpunit/php-timer": ">=1.0.2,<1.1.0",
                 "phpunit/phpunit-mock-objects": ">=1.2.0,<1.3.0",
-                "symfony/yaml": ">=2.1.0,<2.2.0"
+                "symfony/yaml": ">=2.2.0"
+            },
+            "require-dev": {
+                "pear-pear/pear": "1.9.4"
             },
             "suggest": {
                 "ext-json": "*",
                 "ext-simplexml": "*",
                 "ext-tokenizer": "*",
-                "phpunit/php-invoker": ">=1.1.0"
+                "phpunit/php-invoker": ">=1.1.0,<1.2.0"
             },
-            "time": "2013-01-13 10:21:19",
             "bin": [
                 "composer/bin/phpunit"
             ],
@@ -304,7 +306,8 @@
                 "phpunit",
                 "testing",
                 "xunit"
-            ]
+            ],
+            "time": "2013-03-01 11:55:06"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -327,7 +330,6 @@
             "suggest": {
                 "ext-soap": "*"
             },
-            "time": "2013-01-13 10:24:48",
             "type": "library",
             "autoload": {
                 "classmap": [
@@ -353,31 +355,36 @@
             "keywords": [
                 "mock",
                 "xunit"
-            ]
+            ],
+            "time": "2013-01-13 10:24:48"
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.1.7",
+            "version": "v2.2.0",
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Yaml",
-                "reference": "v2.1.7"
+                "url": "https://github.com/symfony/Yaml.git",
+                "reference": "v2.2.0-RC3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/v2.1.7",
-                "reference": "v2.1.7",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/v2.2.0-RC3",
+                "reference": "v2.2.0-RC3",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "2013-01-17 21:21:51",
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
-                    "Symfony\\Component\\Yaml": ""
+                    "Symfony\\Component\\Yaml\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -395,7 +402,8 @@
                 }
             ],
             "description": "Symfony Yaml Component",
-            "homepage": "http://symfony.com"
+            "homepage": "http://symfony.com",
+            "time": "2013-01-27 16:49:19"
         }
     ],
     "aliases": [
@@ -403,6 +411,12 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": [
+
+    ],
+    "platform": {
+        "php": ">=5.3.0"
+    },
+    "platform-dev": [
 
     ]
 }

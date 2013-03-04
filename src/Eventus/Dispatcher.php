@@ -39,7 +39,7 @@ final class Dispatcher
 			$event->dispatcher = $this;
 			foreach ($this->_listeners[$name] as $listener)
 			{
-				$listener($event);
+				call_user_func($listener, $event);
 			}
 		}
 	}
