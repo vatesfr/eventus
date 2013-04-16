@@ -26,13 +26,13 @@ namespace Eventus;
 /**
  * Base class for events, extends if necessary.
  *
- * @property-read Dispatcher $dispatcher
- * @property-read string     $name
+ * @property-read Dispatcher $dispatcher Dispatcher who dispatched this event.
+ * @property-read string     $name       Name of the event.
  */
 class Event
 {
 	/**
-	 *
+	 * @param string $name Name of this event.
 	 */
 	function __construct($name)
 	{
@@ -46,7 +46,11 @@ class Event
 	{}
 
 	/**
-	 * @param string $name
+	 * Returns the value of a property.
+	 *
+	 * @param string $name Name of the property.
+	 *
+	 * @return mixed Value of the property.
 	 */
 	function __get($name)
 	{
@@ -63,8 +67,10 @@ class Event
 	}
 
 	/**
-	 * @param string $name
-	 * @param mixed  $value
+	 * Changes the value of a property
+	 *
+	 * @param string $name  Name of the property.
+	 * @param mixed  $value Value of the property.
 	 */
 	function __set($name, $value)
 	{

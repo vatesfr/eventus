@@ -55,7 +55,7 @@ final class TestListener
 //--------------------------------------
 
 /**
- * @covers Dispatcher
+ * @covers \Eventus\Dispatcher
  */
 final class DispatcherTest extends \PHPUnit_Framework_TestCase
 {

@@ -29,7 +29,7 @@ use Eventus\Event;
 //--------------------------------------
 
 /**
- * @covers Event
+ * @covers \Eventus\Event
  */
 final class EventTest extends \PHPUnit_Framework_TestCase
 {
@@ -42,7 +42,7 @@ final class EventTest extends \PHPUnit_Framework_TestCase
 
 	////////////////////////////////////////
 
-	function testSetEvent()
+	function testSetName()
 	{
 		$this->setExpectedException('\PHPUnit_Framework_Error');
 
